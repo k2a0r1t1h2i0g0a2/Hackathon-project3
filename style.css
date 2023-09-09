@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.flex {
+    background-color: #ffffff;
+    max-width: 400px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+}
+
+h1 {
+    text-align: center;
+}
+
+.input-container {
+    margin-bottom: 10px;
+
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+textarea,
+input,
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+#generate {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#download-format {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #5efc08;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    padding: 20px
+}
+
+.output-container {
+    max-width: 100%;
+    text-align: center;
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+
+        align-items: center;
+
+    }
+
+    .input-container,
+
+    .output-container {
+        flex: none;
+
+        width: 100%;
+
+        padding: 0;
+    }
+}
